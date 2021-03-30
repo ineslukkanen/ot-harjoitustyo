@@ -33,5 +33,5 @@ Some of these might see daylight already during the basic version development, s
 
 ## Link to the hours I've put in so far:
 
-[Tyoaikakirjanpito](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/tyoaikakirjanpito.md)
+[Tyoaikakirjanpito](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/tyoaikakirjanpito.md)
 
