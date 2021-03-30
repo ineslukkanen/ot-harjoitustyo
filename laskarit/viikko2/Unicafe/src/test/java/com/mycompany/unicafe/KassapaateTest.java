@@ -159,5 +159,10 @@ public class KassapaateTest {
     public void kassanSaldoKasvaaOikeinRahaaLadattaessa() {
         kassa.lataaRahaaKortille(kortti, 200);
         assertThat(kassa.kassassaRahaa(), is(equalTo(100200)));
+            }
+    @Test
+    public void kassanSaldoKasvaaOikeinRahaaLadattaessaKunRahaaYliNolla() {
+        kassa.lataaRahaaKortille(kortti, -1);
+        assertThat(kassa.kassassaRahaa(), is(equalTo(100000)));
     }
 }
