@@ -4,8 +4,7 @@ package cinemastan.domain;
  *
  * @author inlukkan
  */
-import java.util.ArrayList; 
-import java.util.List; 
+import java.util.*;
 
 public class QuizQuestions { 
 
@@ -29,7 +28,9 @@ Question quizQuestion = new Question(question, 3, answers1);
 
 this.quizQuestions.add(quizQuestion); 
 question = "Who starred alongside Dustin Hoffman in the 1988 classic, Rain Man?"; 
-String[] answers2 = { "Tom Cruise", "Charlie Sheen", "River Phoenix", "Tom Hanks" }; quizQuestion = new Question (question, 0, answers2); this.quizQuestions.add(quizQuestion); 
+String[] answers2 = { "Tom Cruise", "Charlie Sheen", "River Phoenix", "Tom Hanks" };
+quizQuestion = new Question (question, 0, answers2); 
+this.quizQuestions.add(quizQuestion); 
 
 this.quizQuestions.add(quizQuestion); 
 question = "Which gruesome horror franchise debuted in 2004, starring Cary Elwes and Danny Glover?";  

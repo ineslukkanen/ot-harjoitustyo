@@ -43,10 +43,13 @@ public class CinemaStanProgram {
         }
 
        System.out.println("Here’s lookin’ at you, kid");
-//Alternatively “Hasta la vista, Baby!” or “Time to say goodbye, Highlander!
+       //Alternatively “Hasta la vista, Baby!” or “Time to say goodbye, Highlander!
    }
 
     private void quizEasy() {
+        QuizQuestions quizzical = new QuizQuestions();
+        System.out.print(quizzical.getQuizQuestions());
         System.out.println("Under construction!");
+        
         }
 }
