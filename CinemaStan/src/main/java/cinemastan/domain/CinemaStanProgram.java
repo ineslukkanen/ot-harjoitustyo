@@ -1,27 +1,26 @@
 package cinemastan.domain;
 
-
-/**
- *
- * @author inlukkan
- */
 import java.util.*;
+import javafx.application.Application;
+import static javafx.application.Application.launch;
+import javafx.stage.Stage;
 
-public class CinemaStanProgram {
+public class CinemaStanProgram extends Application {
+
+    static void main(String[] args) {
+        launch(args);
+    }
     
-  private Scanner scanner;  
-  private QuizQuestions quizquestions;
+    Scanner scanner = new Scanner(System.in);  
+  
    
-   public CinemaStanProgram(Scanner scanner, QuizQuestions quizquestions) {  
+   public CinemaStanProgram() {  
        this.scanner = scanner;
-       this.quizquestions=quizquestions;
    }
 
-    CinemaStanProgram() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+@Override
 
-   public void start() {
+   public void start(Stage stage) throws Exception {
        while (true) {
            System.out.println("You had me at ‘hello’. Welcome to CinemaStan!");
            System.out.println("What would you like to do?");
