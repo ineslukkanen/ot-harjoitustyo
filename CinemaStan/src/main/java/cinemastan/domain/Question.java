@@ -13,31 +13,31 @@ package cinemastan.domain;
 
 public class Question { 
 
-private final int correctAnswerIndex; 
-private final String question; 
-private final String[] answers; 
+    private int correctAnswer; 
+    private String question; 
+    private String[] answers; 
 
-public Question(String question, int correctAnswerIndex, String... answers) { 
-    this.question = question; 
-    this.answers = answers; 
-    this.correctAnswerIndex = correctAnswerIndex; 
+    public Question(String question, int correctAnswer, String... answers) { //var args <3
+        this.question = question; 
+        this.answers = answers; 
+        this.correctAnswer = correctAnswer; 
 
-} 
-public String[] getAnswers() { 
-
-    return answers; 
-
-} 
-
-public String getQuestion() { 
-
-    return question; 
-} 
-
-
-public String getCorrectAnswer() { 
-
-    return answers[correctAnswerIndex]; 
     } 
-}
+    public String[] getAnswers() { 
+
+        return answers; 
+
+    } 
+
+    public String getQuestion() { 
+
+        return question; 
+    } 
+
+
+    public String getCorrectAnswer() { 
+
+        return answers[correctAnswer]; 
+        } 
+    }
 

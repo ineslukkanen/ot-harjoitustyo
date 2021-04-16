@@ -9,12 +9,17 @@ import java.util.*;
 
 public class CinemaStanProgram {
     
-    
-   private Scanner scanner;
+  private Scanner scanner;  
+  private QuizQuestions quizquestions;
    
-   
-   public CinemaStanProgram(Scanner scanner) {
+   public CinemaStanProgram(Scanner scanner, QuizQuestions quizquestions) {  
+       this.scanner = scanner;
+       this.quizquestions=quizquestions;
    }
+
+    CinemaStanProgram() {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
 
    public void start() {
        while (true) {
@@ -44,12 +49,11 @@ public class CinemaStanProgram {
 
        System.out.println("Here’s lookin’ at you, kid");
        //Alternatively “Hasta la vista, Baby!” or “Time to say goodbye, Highlander!
-   }
+}
 
     private void quizEasy() {
-        QuizQuestions quizzical = new QuizQuestions();
-        System.out.print(quizzical.getQuizQuestions());
+        
         System.out.println("Under construction!");
         
-        }
+    }
 }

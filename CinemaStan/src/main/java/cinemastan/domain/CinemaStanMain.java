@@ -16,10 +16,9 @@ import java.util.*;
 public class CinemaStanMain {
     
     public static void main(String[] args) {
-        
-        Scanner scanner = new Scanner(System.in);
-        CinemaStanProgram cinemastan = new CinemaStanProgram(scanner);
-        cinemastan.start();
+        Scanner scanner = new Scanner(System.in);  
+        QuizQuestions quizquestions = new QuizQuestions();
+        new CinemaStanProgram(scanner, quizquestions).start();
      
     }
 }
