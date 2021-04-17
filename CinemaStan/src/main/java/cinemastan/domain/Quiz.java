@@ -11,18 +11,22 @@ package cinemastan.domain;
  * @author inlukkan
  */
 
-public class Question { 
+public class Quiz { 
 
-    private int correctAnswer; 
     private String question; 
+    private int correctAnswer; 
     private String[] answers; 
 
-    public Question(String question, int correctAnswer, String... answers) { //var args <3
+    public Quiz(String question, int correctAnswer, String... answers) { //var args <3
         this.question = question; 
         this.answers = answers; 
         this.correctAnswer = correctAnswer; 
 
     } 
+
+    Quiz() {
+        
+    }
     public String[] getAnswers() { 
 
         return answers; 
@@ -38,6 +42,10 @@ public class Question {
     public String getCorrectAnswer() { 
 
         return answers[correctAnswer]; 
-        } 
     }
-
+    
+    @Override
+    public String toString() {
+        return this.question + ": " + this.answers;
+    }
+}
