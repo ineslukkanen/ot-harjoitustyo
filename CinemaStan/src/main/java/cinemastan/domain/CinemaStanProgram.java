@@ -14,16 +14,20 @@ public class CinemaStanProgram extends Application {
     Scanner scanner = new Scanner(System.in);  
     Quiz quiz;
     int userScore;
+    private Random random;
+    private int goodbyes;
    
    public CinemaStanProgram() {  
        this.quiz = new Quiz();
        this.scanner = scanner;
        this.userScore=0;
+           
    }
 
 @Override
 
    public void start(Stage stage) throws Exception {
+       
        System.out.println("You had me at ‘hello’. Welcome to CinemaStan!");
        System.out.println(" ");
        
@@ -51,14 +55,13 @@ public class CinemaStanProgram extends Application {
                 System.out.println("Wanna run that by me again, buster?");
             }
         }
+       
+       System.out.println(goodbyes());
 
-       System.out.println("Here’s lookin’ at you, kid");
-       //Alternatively “Hasta la vista, baby!” or “Time to say goodbye, Highlander!
 }
 
-    private void quizEasy() {
+    public void quizEasy() {
         System.out.println("Here we go! Hope you're ready.");
-        System.out.println(" ");
         
         quiz.getQuestion();
                
@@ -76,8 +79,11 @@ public class CinemaStanProgram extends Application {
             Your high score has been updated to your account.
         }*/ 
     }
-    private void accountCreation(){
+    public void accountCreation(){ //Database functions here
+        
         System.out.println("Awesome!");
+            
+            this.userScore=0;
             
             System.out.println("Choose a memorable username: ");
             String username = this.scanner.nextLine();
@@ -101,7 +107,7 @@ public class CinemaStanProgram extends Application {
             
         }
     
-    private void accountLogin(){
+    public void accountLogin(){
         System.out.println(" ");
         
         System.out.println("Username: ");
@@ -112,5 +118,14 @@ public class CinemaStanProgram extends Application {
             
         System.out.println("Oh, right this way, please, your booth is ready!");
         System.out.println(" ");
+    }
+    public String goodbyes(){
+        Random random = new Random(); //will be used for randomizing an array of goodbyes later
+        String one= "Here’s lookin’ at you, kid!";
+        /*String two= "Hasta la vista, Baby!";
+        String three= "Time to say goodbye, Highlander";*/
+        
+        return one;
+       
     }
 }

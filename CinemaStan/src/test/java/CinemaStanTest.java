@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 
+import cinemastan.domain.CinemaStanMain;
+import cinemastan.domain.CinemaStanProgram;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -19,23 +21,17 @@ public class CinemaStanTest {
     
     public CinemaStanTest() {
     }
+    CinemaStanProgram cinemastan = new CinemaStanProgram();
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
+
     @Before
     public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
+        
     }
 
     @Test
-    public void PlaceHolder() {}
+    public void quizEasyWorks() {
+    cinemastan.quizEasy();
+    assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
+    }
 }
