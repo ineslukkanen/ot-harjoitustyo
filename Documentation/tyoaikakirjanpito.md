@@ -14,5 +14,9 @@
 | 6.4.  | 2    | Toiminnallisuuden koodausta |
 | 11.4. | 1    | Käyttöliittymän koodausta (sairasloman jälkeen) |
 | 12.4. | 1    | Käyttöliittymän koodausta |
-| 13.4. | 2    | Netbeansin pitkällisten ongelmien troubleshoot|
-| yht   | 16   | | 
+| 13.4. | 4    | Netbeansin pitkällisten ongelmien troubleshoot|
+| 14.4. | 2    | Toiminnallisuuksien debugausta |
+| 15.4. | 2    | Metodien ja luokkien korjailua |
+| 16.4. | 3    | Käyttöliittymän päivittämistä |
+| 17.4. | 3    | Tiedonhaku toiminnallisuuksien toteutukseen, testiluokan alustusta |
+| yht   | 28   | | 
