@@ -11,12 +11,12 @@ The purpose of the app is to be a fun one-player game of movie trivia.
 ## Planned functionalities of the basic version 
 
 * User can play a fun movie trivia game with the following attributes: 
-* Questions in two categories of difficulty 
+* Questions in two categories of difficulty (*partially done*)
 * A timer for each question, varying by difficulty 
 * Visible accumulated score 
-* User can select question difficulty: easy or hard 
-* The initial version has only 30 questions per difficulty 
-* User can save their high score, accompanied by a nickname
+* User can select question difficulty: easy or hard (*done*)
+* The initial version has only 30 questions per difficulty (*partially done*)
+* User can save their high score, accompanied by a nickname (*partially done*)
 
  
 ## Ideas for further development 
