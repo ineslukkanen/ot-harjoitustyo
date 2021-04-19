@@ -34,4 +34,24 @@ public class CinemaStanTest {
     cinemastan.quizEasy();
     assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
     }
+    @Test
+    public void quizHardWorks() {
+    cinemastan.quizEasy();
+    assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
+    }
+    @Test
+    public void qetAnswersReturnsAnswers() {
+    cinemastan.quizEasy();
+    assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
+    }
+        @Test
+    public void qetQuestionReturnsQuestions() {
+    cinemastan.quizEasy();
+    assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
+    }
+    @Test
+    public void getCorrectAnswerReturnsCorrectly() {
+    cinemastan.quizEasy();
+    assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
+    }
 }

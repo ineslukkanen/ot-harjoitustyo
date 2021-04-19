@@ -35,8 +35,9 @@ public class CinemaStanProgram extends Application {
            
            System.out.println("What would you like to do next?");
            System.out.println("1) I want to play a game! (Quiz difficulty: easy)");
-           System.out.println("2) Sign me up! (Create account)"); //Database tba
-           System.out.println("3) Don't you know who I am? (Log in to your account)"); //Not yet functional
+           System.out.println("2) Danger is my middle name! (Quiz difficulty: difficult)");
+           System.out.println("3) Sign me up! (Create account)"); //Database tba
+           System.out.println("4) Don't you know who I am? (Log in to your account)"); //Not yet functional
            System.out.println("x) Exit CinemaStan");
 
            System.out.println(" ");
@@ -47,8 +48,10 @@ public class CinemaStanProgram extends Application {
             } else if (command.equals("1")) {
                 quizEasy();
             } else if (command.equals("2")) {
-                accountCreation();
+                quizHard();
             } else if (command.equals("3")) {
+                accountCreation();
+            } else if (command.equals("4")) {
                 accountLogin();
             
             } else {
@@ -78,6 +81,9 @@ public class CinemaStanProgram extends Application {
             At the end, println You got x out of 10 questions right!
             Your high score has been updated to your account.
         }*/ 
+    }
+    public void quizHard(){
+        System.out.println("Ready or not, here's Johnny!");
     }
     public void accountCreation(){ //Database functions here
         
@@ -118,6 +124,7 @@ public class CinemaStanProgram extends Application {
             
         System.out.println("Oh, right this way, please, your booth is ready!");
         System.out.println(" ");
+        
     }
     public String goodbyes(){
         Random random = new Random(); //will be used for randomizing an array of goodbyes later
