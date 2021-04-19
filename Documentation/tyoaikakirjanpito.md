@@ -19,4 +19,5 @@
 | 15.4. | 2    | Metodien ja luokkien korjailua |
 | 16.4. | 3    | Käyttöliittymän päivittämistä |
 | 17.4. | 3    | Tiedonhaku toiminnallisuuksien toteutukseen, testiluokan alustusta |
+| 19.4. | 2    | Dokumentaatiota, metodien alustusta, checkstyle troubleshoot|
 | yht   | 28   | | 
