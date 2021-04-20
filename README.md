@@ -8,6 +8,9 @@ The purpose of the app is to be a fun one-player game of movie trivia.
 
 [Tyoaikakirjanpito](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/tyoaikakirjanpito.md)
 
+[Architecture](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/architecture.md)
+
+
 ## Planned functionalities of the basic version 
 
 * User can play a fun movie trivia game with the following attributes: 
