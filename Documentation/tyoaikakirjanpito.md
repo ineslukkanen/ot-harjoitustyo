@@ -1,5 +1,5 @@
 
-# työaikakirjanpito
+# Työaikakirjanpito
 
 | päivä | aika | mitä tein  |
 | :----:|:-----| :-----|
@@ -20,4 +20,5 @@
 | 16.4. | 3    | Käyttöliittymän päivittämistä |
 | 17.4. | 3    | Tiedonhaku toiminnallisuuksien toteutukseen, testiluokan alustusta |
 | 19.4. | 2    | Dokumentaatiota, metodien alustusta, checkstyle troubleshoot|
-| yht   | 28   | | 
+| 20.4. | 4    | Dokumentaatiota, checkstyle, tiedonhakua toiminnallisuuksiin |
+| yht   | 34   | | 
