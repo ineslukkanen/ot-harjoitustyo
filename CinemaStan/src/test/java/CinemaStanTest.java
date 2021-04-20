@@ -28,7 +28,7 @@ public class CinemaStanTest {
     public void setUp() {
         
     }
-
+/* Tests will come once the main functionalities are done
     @Test
     public void quizEasyWorks() {
     cinemastan.quizEasy();
@@ -53,5 +53,5 @@ public class CinemaStanTest {
     public void getCorrectAnswerReturnsCorrectly() {
     cinemastan.quizEasy();
     assertEquals("Here we go! Hope you're ready.", cinemastan.toString());
-    }
+    }*/
 }
