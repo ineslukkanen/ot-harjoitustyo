@@ -71,15 +71,15 @@ public class CinemaStanProgram extends Application {
         /*while (questions <=10) {
            questions 0;
            
-           System.out.println(" ");
-           String userAnswer = this.scanner.nextLine();
+           print " "
+           userAnswer = this.scanner
            
             If answer correct
             score++
             questions++
            
-            At the end, println You got x out of 10 questions right!
-            Your high score has been updated to your account.
+            At the end, print "You got x out of 10 questions right!
+            Your high score has been updated to your account."
         }*/ 
     }
     public void quizHard(){
