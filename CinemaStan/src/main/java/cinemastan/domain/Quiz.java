@@ -30,14 +30,14 @@ public class Quiz {
         setup.setHgap(10);
         setup.setPadding(new Insets(10, 10, 10, 10));
  
-        Button placeholder = new Button("Your answer: ");
+        Button go = new Button("Go!");
         Label check = new Label("");
  
-        setup.add(placeholder, 0, 0);
-        setup.add(answerField, 0, 1);
-        setup.add(check, 0, 3);
- 
-        placeholder.setOnMouseClicked((event) -> {
+        setup.add(go, 0, 3);
+        setup.add(answerField, 0, 4);
+        setup.add(check, 0, 2);
+        setup.add(questionLabel, 0, 1);
+        go.setOnMouseClicked((event) -> {
             String answer = answerField.getText();
             if (quizQuestions.getQuestion(question).equals(answer)) {
                 check.setText("Correct!");
