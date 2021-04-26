@@ -26,7 +26,7 @@ public class User {
     public int getScore() {
         return score;
     }
-    public void increaseScore(){
+    public void increaseScore() {
         this.score++;
     }
 
