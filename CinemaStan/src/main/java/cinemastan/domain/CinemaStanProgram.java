@@ -4,28 +4,20 @@ import java.util.*;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
 import javafx.stage.Stage;
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 
 public class CinemaStanProgram extends Application {
-
+Scanner scanner = new Scanner(System.in);
     static void main(String[] args) {
-        launch(args);
-    }
-   
-    Scanner scanner = new Scanner(System.in);  
-    Quiz quiz;
-    int userScore;
-    private Random random;
-    private int goodbyes;
-   
-   public CinemaStanProgram() {  
-       this.quiz = new Quiz();
-       this.scanner = scanner;
-       this.userScore=0;
-           
+        launch(args);         
    }
 
 @Override
-
    public void start(Stage stage) throws Exception {
        
        System.out.println("You had me at ‘hello’. Welcome to CinemaStan!");
@@ -66,22 +58,11 @@ public class CinemaStanProgram extends Application {
     public void quizEasy() {
         System.out.println("Here we go! Hope you're ready.");
         
-        quiz.getQuestion();
-               
-        /*while (questions <=10) {
-           questions 0;
-           
-           print " "
-           userAnswer = this.scanner
-           
-            If answer correct
-            score++
-            questions++
-           
-            At the end, print "You got x out of 10 questions right!
-            Your high score has been updated to your account."
-        }*/ 
-    }
+        Questions quizQuestions = new Questions();
+        Quiz easyQuiz = new Quiz(quizQuestions);
+        easyQuiz.quizView();
+        
+    }    
     public void quizHard(){
         System.out.println("Ready or not, here's Johnny!");
     }
@@ -89,11 +70,9 @@ public class CinemaStanProgram extends Application {
         
         System.out.println("Awesome!");
             
-            this.userScore=0;
             
             System.out.println("Choose a memorable username: ");
             String username = this.scanner.nextLine();
-            
             
             while(true){
                 System.out.println("Choose a good password(5-10 characters): ");

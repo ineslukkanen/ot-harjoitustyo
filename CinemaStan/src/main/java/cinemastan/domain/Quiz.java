@@ -1,51 +1,57 @@
 package cinemastan.domain;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 
-/**
- *
- * @author inlukkan
- */
 
 public class Quiz { 
 
-    private String question; 
-    private int correctAnswer; 
-    private String[] answers; 
-
-    public Quiz(String question, int correctAnswer, String... answers) { //var args <3
-        this.question = question; 
-        this.answers = answers; 
-        this.correctAnswer = correctAnswer; 
-
-    } 
-
-    Quiz() {
-        
+    private Questions quizQuestions;
+    private String question;
+ 
+    public Quiz(Questions quizQuestions) {
+        this.quizQuestions = quizQuestions;
+        this.question = quizQuestions.askQuestion();
     }
-    public String[] getAnswers() { 
-
-        return answers; 
-
-    } 
-
-    public String getQuestion() { 
-
-        return question; 
-    } 
-
-
-    public String getCorrectAnswer() { 
-
-        return answers[correctAnswer]; 
-    }
-    
-    @Override
-    public String toString() {
-        return this.question + ": " + this.answers;
+ 
+    public Parent quizView() {
+        GridPane setup = new GridPane();
+ 
+        Label questionLabel = new Label(this.question);
+        TextField answerField = new TextField();
+ 
+        setup.setAlignment(Pos.CENTER);
+        setup.setVgap(10);
+        setup.setHgap(10);
+        setup.setPadding(new Insets(10, 10, 10, 10));
+ 
+        Button placeholder = new Button("Your answer: ");
+        Label check = new Label("");
+ 
+        setup.add(placeholder, 0, 0);
+        setup.add(answerField, 0, 1);
+        setup.add(check, 0, 3);
+ 
+        placeholder.setOnMouseClicked((event) -> {
+            String answer = answerField.getText();
+            if (quizQuestions.getQuestion(question).equals(answer)) {
+                check.setText("Correct!");
+            } else {
+                check.setText("Wrong! The correct answer was " + quizQuestions.getQuestion(question) + "'.");
+                return;
+            }
+ 
+            this.question = this.quizQuestions.askQuestion();
+            questionLabel.setText(this.question);
+            answerField.clear();
+ 
+        });
+ 
+        return setup;
     }
 }
