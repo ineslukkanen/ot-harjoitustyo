@@ -9,9 +9,9 @@
 | 24.3. | 1    | Luokkien hahmottelua ja visailukysymyksiä |
 | 24.3. | 1    | Luokkien hahmottelua ja visailukysymyksiä |
 | 25.3. | 1    | Luokkien hahmottelua ja visailukysymyksiä |
-| 26.3. | 2    | Toiminnallisuuden koodausta |
-| 1.4.  | 1    | Toiminnallisuuden koodausta |
-| 6.4.  | 2    | Toiminnallisuuden koodausta |
+| 26.3. | 2    | Toiminnallisuuksien koodausta |
+| 1.4.  | 1    | Toiminnallisuuksien koodausta |
+| 6.4.  | 2    | Toiminnallisuuksien koodausta |
 | 11.4. | 1    | Käyttöliittymän koodausta (sairasloman jälkeen) |
 | 12.4. | 1    | Käyttöliittymän koodausta |
 | 13.4. | 4    | Netbeansin pitkällisten ongelmien troubleshoot|
@@ -21,4 +21,11 @@
 | 17.4. | 3    | Tiedonhaku toiminnallisuuksien toteutukseen, testiluokan alustusta |
 | 19.4. | 2    | Dokumentaatiota, metodien alustusta, checkstyle troubleshoot|
 | 20.4. | 4    | Dokumentaatiota, checkstyle, tiedonhakua toiminnallisuuksiin |
-| yht   | 34   | | 
+| 21.4. | 2    | Käyttäjäluokka, checkstyle |
+| 22.4. | 2    | Graafisen käyttöliittymän mietintää ja suunnittelua |
+| 23.4. | 2    | Ohjelman kokonaan uudelleenrakentamisen suunnittelu |
+| 24.4. | 2    | Ohjelman uudelleenrakentaminen |
+| 25.4. | 2    | Ohjelman uudelleenrakentaminen, luokat |
+| 26.4. | 5    | Ohjelman uudelleenrakentaminen, graafinen käyttöliittymä|
+| 27.4. | 6    | Testien laadinta, pakettirakenteen uudistaminen, käyttöliittymä, 1. release |
+| yht   | 55   | | 
