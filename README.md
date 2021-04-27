@@ -10,29 +10,57 @@ The purpose of the app is to be a fun one-player game of movie trivia.
 
 [Architecture](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/architecture.md)
 
+## Releases
 
-## Planned functionalities of the basic version 
+## Command line commands 
 
-* User can play a fun movie trivia game with the following attributes: 
-* Questions in two categories of difficulty (*partially done*)
-* A timer for each question, varying by difficulty 
-* Visible accumulated score 
-* User can select question difficulty: easy or hard (*done*)
-* The initial version has only 30 questions per difficulty (*partially done*)
-* User can save their high score, accompanied by a nickname (*partially done*)
+### Running CinemaStan
 
- 
-## Ideas for further development 
+Program can be run with the command
 
-Some of these might see daylight already during the basic version development, should the initial functionalities prove to be too simple.  
+```
+mvn compile exec:java (final path here)
+```
 
-* Trivia by movie genre 
-* Adding one more threshold of difficulty; moderate 
-* Unlockable extra features, such as easter eggs, movie quotes, customizable timer, etc. 
-* Sounds 
-* More questions 
-* Statistics by question 
-* More trivia categories 
-* Two-player mode 
-* A cooler-looking graphic interface
+### Testing
+
+Tests can be executed with the command 
+
+```
+mvn test
+```
+Test report is generated with the command
+
+```
+mvn jacoco:report
+```
+
+Report file is in the path _./target/site/jacoco/index.html_
+
+### Generating executable jar
+
+Command
+
+```
+mvn package
+```
+Generates an executable jar-file (name).jar
+
+### JavaDoc
+
+JavaDoc can be generated with the command
+
+```
+mvn javadoc:javadoc
+```
+Examine the JavaDoc by opening target/site/apidocs/index.html on your web browser
+
+### Checkstyle 
+
+Checkstyle report into the checkstyle.xml file is executed with the command
+
+```
+mvn jxr:jxr checkstyle:checkstyle
+```
+Errors can be examined by opening the file target/site/checkstyle.html on your web browser
 
