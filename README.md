@@ -12,6 +12,8 @@ The purpose of CinemaStam is to be a fun one-player game of movie trivia with qu
 
 ## Releases
 
+[Release 1](https://github.com/ineslukkanen/ot-harjoitustyo/releases/tag/viikko5)
+
 ## Command line functions 
 
 ### Testing
