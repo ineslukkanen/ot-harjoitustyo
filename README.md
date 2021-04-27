@@ -2,7 +2,7 @@
 
 ## Purpose of the app 
 
-The purpose of the app is to be a fun one-player game of movie trivia.
+The purpose of CinemaStam is to be a fun one-player game of movie trivia with questions of varying difficulty.
 
 ## Documentation
 
@@ -12,15 +12,7 @@ The purpose of the app is to be a fun one-player game of movie trivia.
 
 ## Releases
 
-## Command line commands 
-
-### Running CinemaStan
-
-Program can be run with the command
-
-```
-mvn compile exec:java (final path here)
-```
+## Command line functions 
 
 ### Testing
 
@@ -35,7 +27,7 @@ Test report is generated with the command
 mvn jacoco:report
 ```
 
-Report file is in the path _./target/site/jacoco/index.html_
+Report file is in the path _/target/site/jacoco/index.html_
 
 ### Generating executable jar
 
@@ -44,7 +36,7 @@ Command
 ```
 mvn package
 ```
-Generates an executable jar-file (name).jar
+Generates an executable jar-file
 
 ### JavaDoc
 
@@ -62,5 +54,5 @@ Checkstyle report into the checkstyle.xml file is executed with the command
 ```
 mvn jxr:jxr checkstyle:checkstyle
 ```
-Errors can be examined by opening the file target/site/checkstyle.html on your web browser
+Errors can be examined by opening the file _target/site/checkstyle.html_ on your web browser
 
