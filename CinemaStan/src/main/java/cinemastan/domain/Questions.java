@@ -1,9 +1,5 @@
 package cinemastan.domain;
 
-/**
- *
- * @author inlukkan
- */
 import java.util.*;
 import cinemastan.ui.CinemaStanProgram;
 

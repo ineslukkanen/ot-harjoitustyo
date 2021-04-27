@@ -42,9 +42,11 @@ public class Quiz {
             String answer = answerField.getText();
             if (quizQuestions.getQuestion(question).equals(answer)) {
                 check.setText("Correct!");
+                
             } else {
                 check.setText("Wrong! The correct answer was " + quizQuestions.getQuestion(question) + "'.");
                 return;
+                
             } 
             this.question = this.quizQuestions.askQuestion();
             questionLabel.setText(this.question);
