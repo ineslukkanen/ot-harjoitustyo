@@ -32,7 +32,7 @@
                 <version>0.8.3</version>
                 <configuration>
                     <excludes>
-                        <exclude>cinemaStan/domain/CinemaStanProgram</exclude>
+                        <exclude>cinemaStan/ui/CinemaStanProgram</exclude>
                     </excludes>
                 </configuration>
                 <executions>

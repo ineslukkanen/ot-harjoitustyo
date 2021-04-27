@@ -1,5 +1,7 @@
-package cinemastan.domain;
+package cinemastan.ui;
 
+import cinemastan.domain.Questions;
+import cinemastan.domain.Quiz;
 import java.util.*;
 import static javafx.application.Application.launch;
 import javafx.stage.Stage;
@@ -16,7 +18,7 @@ import javafx.scene.text.FontWeight;
 
 public class CinemaStanProgram extends Application {
 Scanner scanner = new Scanner(System.in);
-    static void main(String[] args) {
+    public static void main(String[] args) {
         launch(args);         
    }
 

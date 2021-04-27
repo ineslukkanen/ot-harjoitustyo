@@ -1,4 +1,4 @@
-import cinemastan.domain.CinemaStanMain;
+
 import cinemastan.domain.User;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
