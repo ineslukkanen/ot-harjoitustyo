@@ -16,16 +16,18 @@ public class User {
         
     }
 
-    public String getUserName() {
+    public String getUsername() {
         return username;
     }
 
     public String getPassword() {
         return password;
     }
+    
     public int getScore() {
         return score;
     }
+    
     public void increaseScore() {
         this.score++;
     }

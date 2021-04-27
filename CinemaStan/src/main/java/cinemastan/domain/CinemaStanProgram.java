@@ -43,7 +43,7 @@ Scanner scanner = new Scanner(System.in);
  
         play.setOnAction((event) -> layout.setCenter(quiz.quizView()));
  
-        Scene scene = new Scene(layout, 800, 300);
+        Scene scene = new Scene(layout, 800, 400);
  
         stage.setScene(scene);
         stage.show();
