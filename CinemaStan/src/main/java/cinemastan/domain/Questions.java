@@ -29,6 +29,9 @@ public class Questions {
         addQuestion("Actress Scarlet Johansson and director Taika Waititi are no strangers to the Marvel Cinematic Universe. \n What was their first non-Marvel movie together? \n  \n A) What We Do in the Shadows \n B) Lost in Translation \n C) Her \n D) Jojo Rabbit", "D");
         addQuestion("What was the first 3D-animated full-length feature film released by Pixar in 1996?\n  \n A) A Bug’s Life \n B) None; they didn’t release a film until 1997 \n C) Toy Story \n D) Shrek", "C");
         addQuestion("Which 1991 comedy, starring, among others, Raul Julia and Anjelica Huston, featured Christina Ricci \n in her breakout role as Wednesday? \n  \n A) Mermaids \n B) Casper \n C) The Addams Family \n D) Sleepy Hollow", "C");
+        addQuestion("We met the Sanderson sisters, Winifred, Sarah and Mary in the beloved 1993 Halloween classic,\n “Hocus Pocus”. Who played the formidable Winifred Sanderson? \n \n\n A) Barbara Streisand \n B) Goldie Hawn \n C) Sarah Jessica Parker \n D) Bette Midler", "D");
+        addQuestion("In this 2003 comedy, Jack Black takes on the role of Dewey Finn, an accidental substitute music teacher \n with big dreams of stardom. Name the movie! \n \n A) School of Rock \n B) High Fidelity \n C) Tenacious D in the Pick of Destiny \n D) Old School", "A");
+    
     }
  
     public String getQuestion(String question) {

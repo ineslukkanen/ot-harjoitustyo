@@ -29,26 +29,32 @@ Scanner scanner = new Scanner(System.in);
         Label greeting = new Label("Welcome to CinemaStan!");
         greeting.setFont(Font.font("Calibri", FontWeight.BOLD, 20));
         Questions questions = new Questions();
-        
         Quiz quiz = new Quiz(questions);
- 
         BorderPane layout = new BorderPane();
  
         HBox menu = new HBox();
         menu.setPadding(new Insets(20, 20, 20, 20));
         menu.setSpacing(10);
         
+        Button signup = new Button("Sign up");
+        Button login = new Button("Log in");
         Button play = new Button("I want to play a game!");
- 
-        menu.getChildren().addAll(greeting, play);
+        Button exit = new Button("Quit");
+        
+        menu.getChildren().addAll(greeting, signup, login, play, exit);
         layout.setTop(menu);
  
         play.setOnAction((event) -> layout.setCenter(quiz.quizView()));
+        exit.setOnAction((event) -> stop());
+        Scene startView = new Scene(layout, 800, 400);
  
-        Scene scene = new Scene(layout, 800, 400);
- 
-        stage.setScene(scene);
+        stage.setScene(startView);
         stage.show();
+    }
+   
+    @Override
+    public void stop() {
+
     }
 }
         

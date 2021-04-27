@@ -45,8 +45,7 @@ public class Quiz {
             } else {
                 check.setText("Wrong! The correct answer was " + quizQuestions.getQuestion(question) + "'.");
                 return;
-            }
- 
+            } 
             this.question = this.quizQuestions.askQuestion();
             questionLabel.setText(this.question);
             answerField.clear();
