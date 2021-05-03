@@ -27,7 +27,11 @@ public class Questions {
         addQuestion("Which 1991 comedy, starring, among others, Raul Julia and Anjelica Huston, featured Christina Ricci \n in her breakout role as Wednesday? \n  \n A) Mermaids \n B) Casper \n C) The Addams Family \n D) Sleepy Hollow", "C");
         addQuestion("We met the Sanderson sisters, Winifred, Sarah and Mary in the beloved 1993 Halloween classic,\n “Hocus Pocus”. Who played the formidable Winifred Sanderson? \n \n\n A) Barbara Streisand \n B) Goldie Hawn \n C) Sarah Jessica Parker \n D) Bette Midler", "D");
         addQuestion("In this 2003 comedy, Jack Black takes on the role of Dewey Finn, an accidental substitute music teacher \n with big dreams of stardom. Name the movie! \n \n A) School of Rock \n B) High Fidelity \n C) Tenacious D in the Pick of Destiny \n D) Old School", "A");
-    
+        
+        addQuestion("Which successful musical got its film adaptation a little over 30 years after its 1980 stage debut \n in France? \n \n A) The Phantom of the Opera \n B) Les Miserables \n C) The Umbrellas of Cherbourg \n D) Moulin Rouge", "A"); 
+        addQuestion("Katherine Hepburn is the actress with the most academy award wins. Which film below was she only \n nominated for, but didn’t win? \n \n A) Morning Glory (1934) \n B) The African Queen (1952)  \n C) Adam’s Rib (1949) \n D) Guess Who’s Coming to Dinner? (1967)", "B"); 
+        addQuestion("Who starred alongside Guy Pearce and Terence Stamp in the 1994 drag queen comedy, \n “The Adventures of Priscilla, Queen of the Desert”? \n \n A) Patrick Swayze \n B) Hugh Jackman \n C) Russel Crowe \n D) Hugo Weaving", "D");
+
     }
  
     public String getQuestion(String question) {
@@ -44,7 +48,10 @@ public class Questions {
  
     public String askQuestion() {
         Random random = new Random();
-        return this.questions.get(random.nextInt(this.questions.size()));
-    
+        String asked = "";
+        asked = this.questions.get(random.nextInt(this.questions.size()));
+        return asked;
+        
+
     }
 }

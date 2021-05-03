@@ -15,6 +15,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.scene.control.TextField;
 
 public class CinemaStanProgram extends Application {
     Scanner scanner = new Scanner(System.in);
@@ -48,16 +49,52 @@ public class CinemaStanProgram extends Application {
         layout.setStyle("-fx-background-color: linear-gradient(#A74AC7, #F660AB)");
         Scene startView = new Scene(layout, 800, 400);
         
-        //Login coming here
-        GridPane loginView = new GridPane();
-        loginView.add(new Label("Sorry, under construction!"), 0, 0);
-        loginView.add(home, 1, 1);
         
         //Sign-up coming here
-        GridPane signupView = new GridPane();
-        signupView.add(new Label("Sorry, under construction!"), 0, 0);
-        signupView.add(home, 1, 1);
         
+        GridPane signupView = new GridPane();
+        TextField userName = new TextField();
+        TextField userPword = new TextField();
+        Label info1 = new Label("Choose a good username: ");
+        Label info2 = new Label("Choose a password (at least 8 characters minimum): ");
+        Label info3 = new Label("");
+        Button go = new Button("Go!");
+       
+        info1.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
+        info2.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
+        info3.setFont(Font.font("Calibri", FontWeight.NORMAL, 15));
+        
+        signupView.add(info1, 0, 0);
+        signupView.add(userName, 0, 1);
+        signupView.add(info2, 0, 2);
+        signupView.add(userPword, 0, 3);
+        signupView.add(go, 0, 4);
+        signupView.add(info3, 0, 5);
+
+                //Login coming here
+        GridPane loginView = new GridPane();
+        TextField usrName = new TextField();
+        TextField usrPword = new TextField();
+        Label info4 = new Label("Username: ");
+        Label info5 = new Label("Password: ");
+        info4.setFont(Font.font("Calibri", FontWeight.BOLD, 20));
+        info5.setFont(Font.font("Calibri", FontWeight.BOLD, 20));
+        Label info6 = new Label("");
+        Button logIn = new Button("Login");
+        
+        loginView.add(info4, 0, 0);
+        loginView.add(usrName, 0, 1);
+        loginView.add(info5, 0, 2);
+        loginView.add(usrPword, 0, 3);
+        loginView.add(logIn, 0, 4);
+        loginView.add(info6, 0, 5);
+        
+        go.setOnAction((event) ->{
+            info3.setText("Sorry, under construction!");
+        });    
+        logIn.setOnAction((event) ->{
+            info6.setText("Sorry, under construction!");
+        });    
         exit.setOnAction((event) -> {
             System.exit(0);
         });        
