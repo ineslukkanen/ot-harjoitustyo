@@ -9,6 +9,7 @@ import javafx.geometry.Insets;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -47,12 +48,17 @@ public class CinemaStanProgram extends Application {
         layout.setCenter(greeting);
         layout.setTop(menu);
         layout.setStyle("-fx-background-color: linear-gradient(#A74AC7, #F660AB)");
-        Scene startView = new Scene(layout, 800, 400);
+        Scene startView = new Scene(layout, 1000, 500);
         
         
         //Sign-up coming here
         
         GridPane signupView = new GridPane();
+        signupView.setAlignment(Pos.CENTER);
+        signupView.setVgap(10);
+        signupView.setHgap(10);
+
+
         TextField userName = new TextField();
         TextField userPword = new TextField();
         Label info1 = new Label("Choose a good username: ");
@@ -64,21 +70,22 @@ public class CinemaStanProgram extends Application {
         info2.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
         info3.setFont(Font.font("Calibri", FontWeight.NORMAL, 15));
         
-        signupView.add(info1, 0, 0);
-        signupView.add(userName, 0, 1);
-        signupView.add(info2, 0, 2);
-        signupView.add(userPword, 0, 3);
-        signupView.add(go, 0, 4);
-        signupView.add(info3, 0, 5);
+        signupView.add(info1, 3, 3);
+        signupView.add(userName, 3, 5);
+        signupView.add(info2, 3, 7);
+        signupView.add(userPword, 3, 9);
+        signupView.add(go, 3, 11);
+        signupView.add(info3, 0, 13);
 
                 //Login coming here
         GridPane loginView = new GridPane();
+        loginView.setAlignment(Pos.CENTER);
         TextField usrName = new TextField();
         TextField usrPword = new TextField();
         Label info4 = new Label("Username: ");
         Label info5 = new Label("Password: ");
-        info4.setFont(Font.font("Calibri", FontWeight.BOLD, 20));
-        info5.setFont(Font.font("Calibri", FontWeight.BOLD, 20));
+        info4.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
+        info5.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
         Label info6 = new Label("");
         Button logIn = new Button("Login");
         
