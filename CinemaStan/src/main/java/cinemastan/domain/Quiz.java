@@ -46,70 +46,72 @@ public class Quiz {
         setup.setHgap(10);
         setup.setPadding(new Insets(10, 10, 10, 10));
  
-        Button A = new Button("A");
-        Button B = new Button("B");
-        Button C = new Button("C");
-        Button D = new Button("D");
+        Button a = new Button("A");
+        Button b = new Button("B");
+        Button c = new Button("C");
+        Button d = new Button("D");
 
         Label check = new Label("");
         check.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
         setup.add(check, 0, 1);
         setup.add(questionLabel, 0, 3);
-        setup.add(A, 0, 4);
-        setup.add(B, 0, 5);
-        setup.add(C, 0, 6);
-        setup.add(D, 0, 7);
+        setup.add(a, 0, 4);
+        setup.add(b, 0, 5);
+        setup.add(c, 0, 6);
+        setup.add(d, 0, 7);
         
         
-        A.setOnMouseClicked((event) -> {
-        this.answer = "A";
-         if (quizQuestions.getQuestion(question).equals(answer)) {
+        a.setOnMouseClicked((event) -> {
+            this.answer = "A";
+        
+            if (quizQuestions.getQuestion(question).equals(answer)) {
                 check.setText("Correct!");
                
             } else {
-            check.setText("Game over! Your score was: ");
+                check.setText("Game over! Your score was: ");
                 return; 
             } 
             this.question = this.quizQuestions.askQuestion();
             questionLabel.setText(this.question);
         
         });    
-        B.setOnMouseClicked((event) -> {
-        this.answer = "B";
-         if (quizQuestions.getQuestion(question).equals(answer)) {
+        b.setOnMouseClicked((event) -> {
+            this.answer = "B";
+        
+            if (quizQuestions.getQuestion(question).equals(answer)) {
                 check.setText("Correct!");
                
             } else {
-            check.setText("Game over! Your score was: ");
+                check.setText("Game over! Your score was: ");
                 return; 
             } 
             this.question = this.quizQuestions.askQuestion();
             questionLabel.setText(this.question);
             
         });    
-        C.setOnMouseClicked((event) -> {
-        this.answer = "C";
+        c.setOnMouseClicked((event) -> {
+            this.answer = "C";
         
-        if (quizQuestions.getQuestion(question).equals(answer)) {
+            if (quizQuestions.getQuestion(question).equals(answer)) {
                 check.setText("Correct!");       
-        } else {
-            check.setText("Game over! Your score was: ");
+            } else {
+                check.setText("Game over! Your score was: ");
                 return; 
-        } 
+            } 
             this.question = this.quizQuestions.askQuestion();
             questionLabel.setText(this.question);
         
         });    
-        D.setOnMouseClicked((event) -> {
-        this.answer = "D";
+        d.setOnMouseClicked((event) -> {
+            this.answer = "D";
      
-        if (quizQuestions.getQuestion(question).equals(answer)) {
-            check.setText("Correct!");
+            if (quizQuestions.getQuestion(question).equals(answer)) {
+                check.setText("Correct!");
                
-        } else {
-            check.setText("Game over! Your score was: ");
+            } else {
+                check.setText("Game over! Your score was: ");
                 return; 
-        } 
+            } 
             this.question = this.quizQuestions.askQuestion();
             questionLabel.setText(this.question);
  
