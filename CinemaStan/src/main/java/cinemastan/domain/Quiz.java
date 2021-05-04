@@ -10,6 +10,10 @@ import cinemastan.ui.CinemaStanProgram;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 
+/**
+ * 
+ * @author inlukkan
+ */
 
 public class Quiz { 
 
@@ -25,7 +29,10 @@ public class Quiz {
         this.answer = answer;
         this.user = user;
     }
- 
+/**
+ * 
+ * @return  
+ */ 
     public Parent quizView() {
         GridPane setup = new GridPane();
  

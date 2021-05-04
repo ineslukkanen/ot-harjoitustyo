@@ -37,7 +37,11 @@ public class Questions {
     public String getQuestion(String question) {
         return this.correctAnswer.get(question);
     }
- 
+/**
+ * This method adds a question and its correct answer to a list.
+ * @param question question and its possible answers as a string
+ * @param correctAnswer the correct answer to the question 
+ */ 
     public void addQuestion(String question, String correctAnswer) {
         if (!this.correctAnswer.containsKey(question)) {
             this.questions.add(question);
@@ -45,7 +49,12 @@ public class Questions {
  
         this.correctAnswer.put(question, correctAnswer);
     }
- 
+    /**
+     * This method randomizes a quiz question from the list.
+     * The method does not yet inspect whether a question has already been asked. 
+     * 
+     * @return quiz question and its possible answers.
+     */ 
     public String askQuestion() {
         Random random = new Random();
         String asked = "";

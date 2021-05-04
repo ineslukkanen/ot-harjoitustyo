@@ -50,7 +50,6 @@ public class CinemaStanProgram extends Application {
         layout.setStyle("-fx-background-color: linear-gradient(#A74AC7, #F660AB)");
         Scene startView = new Scene(layout, 1000, 500);
         
-        
         //Sign-up coming here
         
         GridPane signupView = new GridPane();
@@ -58,13 +57,12 @@ public class CinemaStanProgram extends Application {
         signupView.setVgap(10);
         signupView.setHgap(10);
 
-
         TextField userName = new TextField();
         TextField userPword = new TextField();
         Label info1 = new Label("Choose a good username: ");
         Label info2 = new Label("Choose a password (at least 8 characters minimum): ");
         Label info3 = new Label("");
-        Button go = new Button("Go!");
+        Button go = new Button("Ready!");
        
         info1.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
         info2.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
@@ -75,7 +73,7 @@ public class CinemaStanProgram extends Application {
         signupView.add(info2, 3, 7);
         signupView.add(userPword, 3, 9);
         signupView.add(go, 3, 11);
-        signupView.add(info3, 0, 13);
+        signupView.add(info3, 3, 13);
 
                 //Login coming here
         GridPane loginView = new GridPane();
@@ -94,7 +92,7 @@ public class CinemaStanProgram extends Application {
         loginView.add(info5, 0, 2);
         loginView.add(usrPword, 0, 3);
         loginView.add(logIn, 0, 4);
-        loginView.add(info6, 0, 5);
+        loginView.add(info6, 0, 6);
         
         go.setOnAction((event) ->{
             info3.setText("Sorry, under construction!");
