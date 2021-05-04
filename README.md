@@ -2,13 +2,19 @@
 
 ## Purpose of the app 
 
-The purpose of CinemaStam is to be a fun one-player game of movie trivia with questions of varying difficulty.
+The purpose of CinemaStan is to be a fun one-player game of movie trivia with questions of varying difficulty.
 
 ## Documentation
 
-[Tyoaikakirjanpito](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/tyoaikakirjanpito.md)
+[User Manual](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/usermanual.md)
+
+[Requirement specifications](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/specifications.md)
 
 [Architecture](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/architecture.md)
+
+[Hours worked (In Finnish)](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/tyoaikakirjanpito.md)
+
+
 
 ## Releases
 
