@@ -30,8 +30,10 @@ public class Quiz {
         this.user = user;
     }
 /**
+ * Method sets up the quiz view and inspects the user's answer
  * 
- * @return  
+ * @return  setup
+ * quizView will be broken into two separate methods soon
  */ 
     public Parent quizView() {
         GridPane setup = new GridPane();

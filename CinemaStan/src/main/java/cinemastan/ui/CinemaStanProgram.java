@@ -20,6 +20,7 @@ import javafx.scene.control.TextField;
 
 public class CinemaStanProgram extends Application {
     Scanner scanner = new Scanner(System.in);
+    
     public static void main(String[] args) {
         launch(args);         
     }
@@ -50,7 +51,9 @@ public class CinemaStanProgram extends Application {
         layout.setStyle("-fx-background-color: linear-gradient(#A74AC7, #F660AB)");
         Scene startView = new Scene(layout, 1000, 500);
         
-        //Sign-up coming here
+/** Sign-up view
+ * Sets up the sign-up layout
+ */
         
         GridPane signupView = new GridPane();
         signupView.setAlignment(Pos.CENTER);
@@ -75,7 +78,9 @@ public class CinemaStanProgram extends Application {
         signupView.add(go, 3, 11);
         signupView.add(info3, 3, 13);
 
-                //Login coming here
+/** Login view
+ * Sets up the login layout
+ */
         GridPane loginView = new GridPane();
         loginView.setAlignment(Pos.CENTER);
         TextField usrName = new TextField();
@@ -102,8 +107,12 @@ public class CinemaStanProgram extends Application {
         });    
         exit.setOnAction((event) -> {
             System.exit(0);
-        });        
-        //Play view
+        });
+        
+/** Buttons
+ * Functions for the buttons
+ */
+
         play.setOnAction((event) -> {
             layout.setCenter(quiz.quizView());
         });
