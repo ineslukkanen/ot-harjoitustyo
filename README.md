@@ -20,6 +20,8 @@ The purpose of CinemaStan is to be a fun one-player game of movie trivia with qu
 
 [Release 1](https://github.com/ineslukkanen/ot-harjoitustyo/releases/tag/viikko5)
 
+[Release 2](https://github.com/ineslukkanen/ot-harjoitustyo/releases/tag/viikko6)
+
 ## Command line functions 
 
 ### Testing
