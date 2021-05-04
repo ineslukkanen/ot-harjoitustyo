@@ -28,4 +28,9 @@
 | 25.4. | 2    | Ohjelman uudelleenrakentaminen, luokat |
 | 26.4. | 5    | Ohjelman uudelleenrakentaminen, graafinen käyttöliittymä|
 | 27.4. | 6    | Testien laadinta, pakettirakenteen uudistaminen, käyttöliittymä, 1. release |
-| yht   | 55   | | 
+| 29.4. | 2    | Tietokantojen toiminnan tutkimista |
+| 1.5.  | 1    | Tietokantojen toiminnan tutkimista ja valintaa |
+| 2.5.  | 4    | Graafisen käyttöliittymän parantelua ja päivitystä |
+| 3.5.  | 4    | Perustoiminnallisuuksien parantelua, käyttöliittymän päivitystä, javadocs|
+| 4.5.  | 3    | Dokumentaatiota, ohjelman pientä korjailua, 2. release|
+| yht   | 69   | | 
