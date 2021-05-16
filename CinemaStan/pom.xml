@@ -38,7 +38,7 @@
                 <configuration>
                     <excludes>
                         <exclude>cinemastan/*</exclude>
-                        <exclude>domain/Qui**</exclude>
+                        <exclude>domain/*</exclude>
                         <exclude>ui/*</exclude>
                     </excludes>
                 </configuration>
