@@ -24,9 +24,6 @@ All other views are built on the initial opening scene. Most of the gameplay and
 
 The naming of methods will be updated in the above figure to reflect the program’s current state.
 
-![Sequence](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/CinemaStan%20play%20quiz.png)
-
-
 
 ## Data storage
 
@@ -34,7 +31,8 @@ Data storage for user data is done by implementing a database, (SQLite) and the 
 
 ## Main functionalities
 
-_TBA_
+![Sequence](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/CinemaStan%20play%20quiz.png)
+
 
 ## Structural weaknesses
 
