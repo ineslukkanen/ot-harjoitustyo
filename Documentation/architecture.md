@@ -3,9 +3,11 @@
 
 ## Structure
 
-In its present state, the CinemaStan only has two packages; Ui and CinemaStan default package.
+CinemaStan's package structure consists of the following:
 
-The package ui contains the UI CinemaStanProgram, and the package CinemaStan contains all of the classes responsible for the application logic. This will be updated and changed very soon.
+- ui : contains the UI CinemaStanProgram
+- domain : contains all of the classes responsible for the application logic
+- database : contains all the database and user functionality classes 
 
 ## UI
 
