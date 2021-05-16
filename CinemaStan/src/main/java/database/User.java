@@ -1,5 +1,5 @@
 
-package cinemastan.database;
+package database;
 
 /**
  * Program user class

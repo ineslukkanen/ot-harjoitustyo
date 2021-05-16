@@ -1,12 +1,12 @@
 
-package cinemastan.database;
+package database;
 
 /**
  *
  * @author inlukkan
  */
 
-import cinemastan.ui.CinemaStanProgram;
+import ui.CinemaStanProgram;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

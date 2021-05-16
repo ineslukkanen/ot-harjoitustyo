@@ -1,9 +1,9 @@
-package cinemastan.ui;
+package ui;
 
-import cinemastan.domain.Questions;
-import cinemastan.domain.Quiz;
-import cinemastan.database.Controller;
-import cinemastan.database.User;
+import domain.Questions;
+import domain.Quiz;
+import database.Controller;
+import database.User;
 import java.util.*;
 import javafx.application.Application;
 import static javafx.application.Application.launch;
@@ -69,7 +69,7 @@ public class CinemaStanProgram extends Application {
         TextField userPword = new TextField();
         Label info1 = new Label("Choose a good username: ");
         Label info2 = new Label("Choose a password (8-10 characters): ");
-        Label passwordError = new Label(""); //Täällä on nyt tää bugi
+        Label passwordError = new Label("");
         Button ready = new Button("Ready!");
        
         info1.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
@@ -111,7 +111,7 @@ public class CinemaStanProgram extends Application {
             String loginUserName = usrName.getText();
             String loginPword = usrPword.getText();
             if (ds.existingUserQuery(loginUserName, loginPword)==true){
-                //Login screne tänne
+                
                 loggedIn = ds.getUserID(loginUserName, loginPword);
             } else {
                 loginError.setText("Looks like that's not right.");

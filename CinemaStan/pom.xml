@@ -37,7 +37,9 @@
                 <version>0.8.3</version>
                 <configuration>
                     <excludes>
-                        <exclude>cinemaStan/ui/CinemaStanProgram</exclude>
+                        <exclude>cinemastan/*</exclude>
+                        <exclude>domain/Qui**</exclude>
+                        <exclude>ui/*</exclude>
                     </excludes>
                 </configuration>
                 <executions>

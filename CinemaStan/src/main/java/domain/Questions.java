@@ -1,7 +1,6 @@
-package cinemastan.domain;
+package domain;
 
 import java.util.*;
-import cinemastan.ui.CinemaStanProgram;
 
 /**
  * 

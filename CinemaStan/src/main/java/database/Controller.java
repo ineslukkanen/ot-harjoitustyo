@@ -1,4 +1,4 @@
-package cinemastan.database;
+package database;
 
 /**
  * Controller class for user data utilities
@@ -24,7 +24,7 @@ public class Controller {
          * @param user 
          */
         
-        public void createNewUser(User user) {
+    public void createNewUser(User user) {
     	userDao.create(user);
 
 	}

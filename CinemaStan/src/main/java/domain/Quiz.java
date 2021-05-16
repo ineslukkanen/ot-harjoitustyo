@@ -1,13 +1,12 @@
-package cinemastan.domain;
+package domain;
 
-import cinemastan.database.User;
+import database.User;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
-import cinemastan.ui.CinemaStanProgram;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 

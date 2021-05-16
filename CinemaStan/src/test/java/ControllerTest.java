@@ -4,9 +4,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import cinemastan.database.UsrDAO;
-import cinemastan.database.User;
-import cinemastan.database.Controller;
+import database.UsrDAO;
+import database.User;
+import database.Controller;
 
 /**
  *
@@ -34,10 +34,7 @@ public class ControllerTest {
         assertNotEquals(newuser, usertwo);
         
     }
-    /*@Test
-    public void createNewUserWorks(){
-        
-    }*/
+   
     @Test
     public void getUserIDWorks() {
         int userID1 = 1;

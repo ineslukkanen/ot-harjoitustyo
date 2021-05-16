@@ -1,5 +1,5 @@
 
-import cinemastan.database.User;
+import database.User;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -24,12 +24,32 @@ User newuser;
        String password = newuser.getPassword();
        assertTrue(newuser.getPassword().equals(password));
     }
+    @Test
+    public void getUserIDWorks(){
+        int ID = newuser.getUserID();
+        assertTrue(newuser.getUserID()==ID);
+    }
 
     @Test
     public void duplicatesRecognized(){
         this.newuser = new User(1, "Staniel", "films98347");
         assertTrue(newuser.equals(this.newuser));
         
+    }
+    @Test
+    public void setUserNameWorks() {
+        this.newuser.setUsername("Daniel");
+        assertTrue(newuser.getUsername().equals(this.newuser.getUsername()));
+    }
+    @Test
+    public void setPasswordWorks() {
+        this.newuser.setPassword("films98347");
+        assertTrue(newuser.getPassword().equals(this.newuser.getPassword()));
+    }
+    @Test
+    public void setUserID() {
+        this.newuser.setUserID(1);
+        assertTrue(newuser.getUserID()==this.newuser.getUserID());
     }
     @Test
     public void nonDuplicatesReturnFalse() {

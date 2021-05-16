@@ -1,6 +1,6 @@
 package cinemastan;
 
-import cinemastan.ui.CinemaStanProgram;
+import ui.CinemaStanProgram;
 
 public class CinemaStanMain {
     
