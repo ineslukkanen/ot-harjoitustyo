@@ -43,5 +43,5 @@
 | 13.5. | 1    | Testit ja poikkeukset |
 | 14.5. | 3    | Tietokannan debuggaus |
 | 15.5. | 2    | Tietokantatoimintojen korjailu |
-| 16.5. | 3    | Dokumentaatio ja ohjelman epätoivoinen paikkailu |
-| yht   | 91   | | 
+| 16.5. | 6    | Dokumentaatio, testit ja ohjelman epätoivoinen paikkailu |
+| yht   | 94   | | 
