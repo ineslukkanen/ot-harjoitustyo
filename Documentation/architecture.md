@@ -22,9 +22,9 @@ All other views are built on the initial opening scene. Most of the gameplay and
 
 ## Application logic
 
-![Structure](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/cinemastanstructure.jpg)
+![Structure](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/classes.jpg)
 
-The naming of methods will be updated in the above figure to reflect the program’s current state.
+A simplified version of the application logic is demonstrated in the class diagram above. The user goes through the interface to access the quiz. CinemaStanProgram prompts the Quiz class to build the quiz view, which, in turn, prompts the Questions -class for its inherent question-related functions. For further details, see the "Main functionalities" below. 
 
 
 ## Data storage
