@@ -4,15 +4,18 @@
 
 The purpose of CinemaStan is to be a fun one-player game of movie trivia with questions of varying difficulty.
 
+
 ## Documentation
-
-[User Manual](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/usermanual.md)
-
-[Requirement specifications](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/specifications.md)
 
 [Architecture](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/architecture.md)
 
 [Hours worked (In Finnish)](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/tyoaikakirjanpito.md)
+
+[Requirement specifications](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/specifications.md)
+
+[Testing](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/testing.md)
+
+[User Manual](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/usermanual.md)
 
 
 
@@ -21,6 +24,9 @@ The purpose of CinemaStan is to be a fun one-player game of movie trivia with qu
 [Release 1](https://github.com/ineslukkanen/ot-harjoitustyo/releases/tag/viikko5)
 
 [Release 2](https://github.com/ineslukkanen/ot-harjoitustyo/releases/tag/viikko6)
+
+[Release 3](https://github.com/ineslukkanen/ot-harjoitustyo/releases/tag/viikko7)
+
 
 ## Command line functions 
 
