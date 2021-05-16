@@ -33,4 +33,15 @@
 | 2.5.  | 4    | Graafisen käyttöliittymän parantelua ja päivitystä |
 | 3.5.  | 4    | Perustoiminnallisuuksien parantelua, käyttöliittymän päivitystä, javadocs|
 | 4.5.  | 3    | Dokumentaatiota, ohjelman pientä korjailua, 2. release|
-| yht   | 69   | | 
+| 5.5.  | 3    | Tietokannan rakennus ja kirjautuminen |
+| 7.5.  | 1    | Tietokannan rakennus ja kirjautuminen |
+| 8.5.  | 2    | Tietokannan rakennus ja kirjautuminen |
+| 9.5.  | 1    | Tietokannan rakentaminen |
+| 10.5. | 1    | Tietokannan rakentaminen |
+| 11.5. | 2    | Testit ja poikkeukset |
+| 12.5. | 3    | Tietokannan debuggaus |
+| 13.5. | 1    | Testit ja poikkeukset |
+| 14.5. | 3    | Tietokannan debuggaus |
+| 15.5. | 2    | Tietokantatoimintojen korjailu |
+| 16.5. | 3    | Dokumentaatio ja ohjelman epätoivoinen paikkailu |
+| yht   | 91   | | 
