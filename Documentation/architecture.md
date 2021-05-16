@@ -3,9 +3,11 @@
 
 ## Structure
 
-In its present state, the CinemaStan only has two packages; Ui and CinemaStan default package.
+CinemaStan's package structure consists of the following:
 
-The package ui contains the UI CinemaStanProgram, and the package CinemaStan contains all of the classes responsible for the application logic. This will be updated and changed very soon.
+- ui : contains the UI CinemaStanProgram
+- domain : contains all of the classes responsible for the application logic
+- database : contains all the database and user functionality classes 
 
 ## UI
 
@@ -24,9 +26,6 @@ All other views are built on the initial opening scene. Most of the gameplay and
 
 The naming of methods will be updated in the above figure to reflect the program’s current state.
 
-![Sequence](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/CinemaStan%20play%20quiz.png)
-
-
 
 ## Data storage
 
@@ -34,7 +33,8 @@ Data storage for user data is done by implementing a database, (SQLite) and the 
 
 ## Main functionalities
 
-_TBA_
+![Sequence](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/CinemaStan%20play%20quiz.png)
+
 
 ## Structural weaknesses
 
