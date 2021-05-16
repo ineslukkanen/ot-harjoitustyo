@@ -22,7 +22,7 @@ System testing has been performed manually.
 
 ### Functionalities
 
-Most of the functionalities listed in the requirements document (linkki) have been covered.
+Most of the functionalities listed in the requirements specifications [document](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/specifications.md) have been covered.
 
 
 ## Program flaws
