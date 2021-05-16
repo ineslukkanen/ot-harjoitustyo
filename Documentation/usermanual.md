@@ -2,7 +2,7 @@
 
 ## Configuration
 
-_Coming soon_
+Download the jar file and move it to the target folder for launching.
 
 ## Starting the program
 
