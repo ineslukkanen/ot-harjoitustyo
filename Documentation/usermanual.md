@@ -26,6 +26,6 @@ Creating a new account for CinemaStan is possible by clicking the “sign up” 
 
 ## Login
 
-By logging in before playing a game, CinemaStan can save and update the player’s high score.
+After a successful user creation instance, the user is directed to login. The same can naturally be done by clicking the "login" -button.
 
 ![Login](https://github.com/ineslukkanen/ot-harjoitustyo/blob/main/Documentation/images/login.png)
