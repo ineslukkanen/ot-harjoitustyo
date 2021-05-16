@@ -2,24 +2,29 @@ package cinemastan.ui;
 
 import cinemastan.domain.Questions;
 import cinemastan.domain.Quiz;
+import cinemastan.database.Controller;
+import cinemastan.database.User;
 import java.util.*;
+import javafx.application.Application;
 import static javafx.application.Application.launch;
+import javafx.geometry.Pos;
 import javafx.stage.Stage;
 import javafx.geometry.Insets;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
-import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import javafx.scene.control.TextField;
+
 
 public class CinemaStanProgram extends Application {
     Scanner scanner = new Scanner(System.in);
+    private Controller ds = new Controller("db");
+    private int loggedIn;
     
     public static void main(String[] args) {
         launch(args);         
@@ -27,7 +32,7 @@ public class CinemaStanProgram extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-       
+           
         stage.setTitle("CinemaStan");
         Label greeting = new Label("Welcome to CinemaStan!");
         greeting.setFont(Font.font("Calibri", FontWeight.BOLD, 48));
@@ -63,24 +68,25 @@ public class CinemaStanProgram extends Application {
         TextField userName = new TextField();
         TextField userPword = new TextField();
         Label info1 = new Label("Choose a good username: ");
-        Label info2 = new Label("Choose a password (at least 8 characters minimum): ");
-        Label info3 = new Label("");
-        Button go = new Button("Ready!");
+        Label info2 = new Label("Choose a password (8-10 characters): ");
+        Label passwordError = new Label(""); //Täällä on nyt tää bugi
+        Button ready = new Button("Ready!");
        
         info1.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
         info2.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
-        info3.setFont(Font.font("Calibri", FontWeight.NORMAL, 15));
+        passwordError.setFont(Font.font("Calibri", FontWeight.NORMAL, 15));
         
         signupView.add(info1, 3, 3);
         signupView.add(userName, 3, 5);
         signupView.add(info2, 3, 7);
         signupView.add(userPword, 3, 9);
-        signupView.add(go, 3, 11);
-        signupView.add(info3, 3, 13);
+        signupView.add(ready, 3, 11);
+        signupView.add(passwordError, 3, 13);
 
 /** Login view
  * Sets up the login layout
  */
+
         GridPane loginView = new GridPane();
         loginView.setAlignment(Pos.CENTER);
         TextField usrName = new TextField();
@@ -89,7 +95,7 @@ public class CinemaStanProgram extends Application {
         Label info5 = new Label("Password: ");
         info4.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
         info5.setFont(Font.font("Calibri", FontWeight.BOLD, 15));
-        Label info6 = new Label("");
+        Label loginError = new Label("");
         Button logIn = new Button("Login");
         
         loginView.add(info4, 0, 0);
@@ -97,13 +103,20 @@ public class CinemaStanProgram extends Application {
         loginView.add(info5, 0, 2);
         loginView.add(usrPword, 0, 3);
         loginView.add(logIn, 0, 4);
-        loginView.add(info6, 0, 6);
+        loginView.add(loginError, 0, 6);
+           
         
-        go.setOnAction((event) ->{
-            info3.setText("Sorry, under construction!");
-        });    
         logIn.setOnAction((event) ->{
-            info6.setText("Sorry, under construction!");
+            
+            String loginUserName = usrName.getText();
+            String loginPword = usrPword.getText();
+            if (ds.existingUserQuery(loginUserName, loginPword)==true){
+                //Login screne tänne
+                loggedIn = ds.getUserID(loginUserName, loginPword);
+            } else {
+                loginError.setText("Looks like that's not right.");
+            }
+            
         });    
         exit.setOnAction((event) -> {
             System.exit(0);
@@ -119,19 +132,34 @@ public class CinemaStanProgram extends Application {
         
         login.setOnAction((event) -> {
             layout.setCenter(loginView);
+            
         });
         signup.setOnAction((event) -> {
             layout.setCenter(signupView);
+            
+        
         });
-        home.setOnAction((event) -> {
-            stage.setScene(startView);
+        ready.setOnAction((event) ->{
+            String newUser = userName.getText();
+            String newPword = userPword.getText();
+            
+            int passwordLength = userPword.getText().length();
+            
+            User thisUser = new User(1, newUser, newPword);
+            
+           if (newUser.isEmpty() || newPword.isEmpty()) {
+               passwordError.setText("Did you fill both fields?");
+           } else if (passwordLength < 8 || passwordLength > 10) {
+               passwordError.setText("Password should be 8-10 characters!");
+           }else{
+               ds.createNewUser(thisUser);
+               layout.setCenter(loginView);
+               
+           }
+
         });                
         stage.setScene(startView);
         stage.show();
-    }
-   
-    @Override
-    public void stop() {
        
     }
 }

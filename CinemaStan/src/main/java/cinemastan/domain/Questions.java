@@ -3,6 +3,11 @@ package cinemastan.domain;
 import java.util.*;
 import cinemastan.ui.CinemaStanProgram;
 
+/**
+ * 
+ * @author inlukkan
+ */
+
 public class Questions { 
  
     private List<String> questions;
@@ -27,10 +32,24 @@ public class Questions {
         addQuestion("Which 1991 comedy, starring, among others, Raul Julia and Anjelica Huston, featured \nChristina Ricci in her breakout role as Wednesday? \n  \n A) Mermaids \n B) Casper \n C) The Addams Family \n D) Sleepy Hollow", "C");
         addQuestion("We met the Sanderson sisters, Winifred, Sarah and Mary in the beloved 1993 Halloween \nclassic, “Hocus Pocus”. Who played the formidable Winifred Sanderson? \n \n\n A) Barbara Streisand \n B) Goldie Hawn \n C) Sarah Jessica Parker \n D) Bette Midler", "D");
         addQuestion("In this 2003 comedy, Jack Black takes on the role of Dewey Finn, an accidental \nsubstitute music teacher with big dreams of stardom. Name the movie! \n \n A) School of Rock \n B) High Fidelity \n C) Tenacious D in the Pick of Destiny \n D) Old School", "A");
-        
+
         addQuestion("Which successful musical got its film adaptation a little over 30 years after \nits 1980 stage debut \n in France? \n \n A) The Phantom of the Opera \n B) Les Miserables \n C) The Umbrellas of Cherbourg \n D) Moulin Rouge", "A"); 
         addQuestion("Katherine Hepburn is the actress with the most academy award wins. Which film below \nwas she only \n nominated for, but didn’t win? \n \n A) Morning Glory (1934) \n B) The African Queen (1952)  \n C) Adam’s Rib (1949) \n D) Guess Who’s Coming to Dinner? (1967)", "B"); 
         addQuestion("Who starred alongside Guy Pearce and Terence Stamp in the 1994 drag queen comedy, \n“The Adventures of Priscilla, Queen of the Desert”? \n \n A) Patrick Swayze \n B) Hugh Jackman \n C) Russel Crowe \n D) Hugo Weaving", "D");
+        
+        addQuestion("What nickname does Sonic the Hedgehog give Tom Wachowski (James Marsden) in Sonic \nThe Movie (2020)? \n \n A) The Pretzel King \nB) The Duke of Dairy \nC) The Donut Lord \nD) The Cupcake Colonel", "C");
+        addQuestion("The dramatic Black Swan (2010) told the story of the hard-working rivals/friends, \nNina and Lily. They were played by Natalie Portman and...\n \nA) Anne Hathaway \nB) Mila Kunis \nC) Winona Ryder \nD) Kirsten Dunst", "B");
+        addQuestion("In the 2011 Adam Sandler comedy, “Just Go With It”, which of these statements is untrue \nregarding Nicole Kidman’s character, Devlin Adams?\n\n A) Her name was used as an euphemism for going number two \nB) Her husband invented the iPod \nC) Her husband was actually gay \nD) She won the ‘best smile’ at her sorority three \nyears in a row", "B");
+        addQuestion("Which part of Michael Gambon as Dumbledore caused the most dismay in Harry Potter fans? \n \nA) His accent \nB) His wardrobe \nC) His expressionlessness \nD) His short temper", "D");
+        addQuestion("Which character made his first film appearance in X-Men Origins: Wolverine (2009), hinting\n at his own future film series? \n \nA) Deadpool \nB) Iron Man \nC) Wolverine \nD) Gambit", "A");
+        addQuestion("Katniss Everdeen and Peeta Mellark represent district 12 in the Hunger Games (2012). What’s \nthe district’s main industry during the first film? \n \nA) Medicine \nB) Masonry \nC) Fishing \nD) Coal mining", "D");
+        addQuestion("Which of these clips are NOT featured on the ominous videotape in the 2002 horror film “The Ring”?\n \nA) Woman brushing her hair \nB) A music box ballerina \nC) Finger punctured by a nail \nD) A ladder falling", "B");
+
+        addQuestion("Where is Nakatomi Plaza located in the action classic, Die Hard (1988)?\n \nA) San Francisco \nB) Tokyo \nC) Los Angeles \nD) Chicago", "C"); 
+        addQuestion("Which of these movies is not a production of the A24 entertainment company? \n \nA) Midsommar \nB) Uncut Gems \nC) Hereditary \nD) Us", "D"); 
+        addQuestion("During which war does the 1998 film “Saving Private Ryan” mostly take place?\n \nA) The American Civil War B) WWII \nC) WWI \nD) Vietnam war", "B");
+        addQuestion("Ice Age: Dawn of the Dinosaurs (2009), Cloudy with a chance of meatballs(2009), and Inside Out (2015).\n Which comedian do all of these animated films have in common? \n \nA) Andy Samberg \nB) Bill Hader \nC) Amy Poehler \nD) Rebel Wilson", "B");
+        addQuestion("Which 2011 animated film captured the lines of its voice actors during actual live performances on set? \n \nA) Rio \nB) Gnomeo & Juliet \nC) Rango \nD) Mars Needs Moms", "C"); 
 
     }
  
@@ -39,9 +58,11 @@ public class Questions {
     }
 /**
  * This method adds a question and its correct answer to a list.
+ * 
  * @param question question and its possible answers as a string
  * @param correctAnswer the correct answer to the question 
- */ 
+ */
+    
     public void addQuestion(String question, String correctAnswer) {
         if (!this.correctAnswer.containsKey(question)) {
             this.questions.add(question);
@@ -55,6 +76,7 @@ public class Questions {
      * 
      * @return quiz question and its possible answers.
      */ 
+    
     public String askQuestion() {
         Random random = new Random();
         String asked = "";

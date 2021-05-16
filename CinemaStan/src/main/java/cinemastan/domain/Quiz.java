@@ -1,5 +1,6 @@
 package cinemastan.domain;
 
+import cinemastan.database.User;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
@@ -33,7 +34,7 @@ public class Quiz {
  * Method sets up the quiz view and inspects the user's answer
  * 
  * @return  setup
- * quizView will be broken into two separate methods soon
+ * 
  */ 
     public Parent quizView() {
         GridPane setup = new GridPane();
